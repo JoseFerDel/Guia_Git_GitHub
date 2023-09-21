@@ -1,3 +1,5 @@
+[ÍNDICE](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/README.md)
+
 # **Git y GitHub**
 
 **Git** y **Github** son dos cosas diferentes.    
@@ -32,4 +34,7 @@ El software que opera **GitHub** fue escrito en **Ruby on Rails**
 **Ruby on Rails**, también conocido como **RoR** o **Rails**, es un framework de aplicaciones web de código abierto escrito en el lenguaje de programación **Ruby**.
 
 GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones **Git**.
-Github es git en versión web y desde la web se pueden realizar casi todas las acciones que podríamos realizar con git desde el terminal. 
+Github es git en versión web y desde la web se pueden realizar casi todas las acciones que podríamos realizar con **git** desde el terminal. 
+
+
+Git y GitHub pueden comuncarse permitiriendo subir repositorios locales gestionados con git a la web GitHub o descargar repositorios remotos de desde GitHub a nuestro equipo local.

@@ -8,7 +8,7 @@ Aclarado esto vamos a describir cada uno por separado.
 
 ## **GIT**
 
-Creado por **Linus Torvalds**    
+Creado por **Linus Torvalds**       
 Su web oficial es esta: **https://git-scm.com/**    
 
 **Según la descripción que aparece en su web:**   

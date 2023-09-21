@@ -1,10 +1,10 @@
 # **Git y GitHub**
 
-**Git** y **Github** son dos cosas diferentes.
-**Git** es independiente de Github.
-**GitHub** es la versión web de **git**, está basado en **git**.
+**Git** y **Github** son dos cosas diferentes.    
+**Git** es independiente de Github.    
+**GitHub** es la versión web de **git**, está basado en **git**.    
 
-Aclarado esto vamos a describir cada uno por separado.
+Aclarado esto vamos a describir cada uno por separado.    
 
 ## **GIT**
 

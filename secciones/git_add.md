@@ -1,6 +1,6 @@
 [ÍNDICE](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/README.md)
 
-![git_áreas.png](/IMG/Git_áreas_02.png "git init")
+![git_áreas.png](/IMG/Git_areas_02.png "git init")
 
 # **git add**
 
@@ -64,7 +64,7 @@ zet@wukong:~/Escritorio/Hello_Git$
 ```
 Utilizar `git add` pone nuestros archivos en el área STAGE.
 
-![git_áreas](/IMG/Git_áreas_03.png "git add")
+![git_áreas](/IMG/Git_areas_03.png "git add")
 
 ## área STAGE
 Ya casi tenemos el registro de nuestro repositorio, la fase en la que se encuentran ahora los archivos implicados se llama **STAGE** mientras están en el "escenario" los archivos puede seguir adelante y dejar registrados sus cambios en un registro ejecutando un 'commit' o salir de esta zona y volver al directorio de trabajo sin guardar nada.

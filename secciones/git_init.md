@@ -9,7 +9,7 @@ De momento no estamos utilizando git, aunque esté instalado, así que nuestro p
 
 En este punto git no está haciendo un seguimiento de nuestros archivos y si se borrase el directorio se perdería todo.
 
-El comando `git init` ejecutado desde un directorio indicará a git que queremos que ese directorio contenga un neuvo **repositorio**.
+El comando `git init` ejecutado desde un directorio indicará a **git** que queremos que ese directorio contenga un nuevo **repositorio**.
 
 Para iniciar un contexto de Git en un directorio concreto primero nos desplazaremos a ese directorio desde el terminal y escribiremos el comando `git init`:
 
@@ -38,7 +38,7 @@ zet@wukong:~/Escritorio/Hello_Git/.git$
 ```
 El directorio **.git** contiene los archivos necesarios para que **git** gestione el nuevo repositorio, si borramos **.git** nuestro directorio volverá a ser un directorio normal sin seguimiento de versiones.
 
-En este punto nuestro proyecto sigue estándo en un directorio de trabajo pero ahora está en seguimiento, git tendrá en cuenta todo lo que ocurra a partir de ahora con los archvios contenidos en el directorio.
+En este punto nuestro proyecto está en seguimiento, **git** tendrá en cuenta todo lo que ocurra a partir de ahora con los archvios contenidos en el directorio.
 
-![git_areas.png](/IMG/Git_areas_01.png "git init")
+![git_areas.png](/IMG/Git_areas_02.png "git init")
 

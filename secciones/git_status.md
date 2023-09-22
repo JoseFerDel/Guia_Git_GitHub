@@ -24,7 +24,7 @@ Por ejemplo:
 
 
 > ## NOTA:
-> Es posible indicarle a git que ignore algún archivo mediante la edición del archivo `.gitignore` esto se explica más tarde.
+> Es posible indicarle a git que ignore algún archivo mediante la edición del archivo `.gitignore`, esto se explica más tarde.
 
 
 

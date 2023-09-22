@@ -1,6 +1,6 @@
 [ÍNDICE](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/README.md)
 
-![git_areas.png](/IMG/Git_areas_02.png "git init")
+![git_áreas.png](/IMG/Git_áreas_02.png "git init")
 
 # **git add**
 
@@ -32,7 +32,7 @@ Aquí podemos ver que aparece un nuevo archivo bajo la sección "Archivos sin se
 Para "capturar" el estado del repositorio en este momento con el nuevo archivo recién creado **hellogit.py** ejecutaremos el comando `git add`.     
     
     
-> ## Nota
+> ## Nota 1
 > Guardar el estado del repositorio tiene dos fases, una al ejecutar `git add` y otra al ejecutar justo después `git commit` (Se habla de `git commit` más adelante.)
 
 Así que ejecutamos `git add` de la siguiente forma:
@@ -45,7 +45,10 @@ o también:
 ### git add . 
 (el punto en este contexto se refiere a todos los archivos sin seguimiento.)
 
-Si tras ejecutar este comando volvermos a ejecutar `git status` en el caso de nuestro ejemplo anterior veremos lo siguiente:
+> ## Nota 2
+> El comando 'git add' actúa sobre el directorio actual en el que nos encontremos y sus subdirectorios, si por algún motivo estamos en un subdirectorio de nuestro directorio de trabajo los archivos que quedan en directorios superiores no podrán agregarse al área STAGE con 'git add', tendremos que volver a ejecutar 'git add' desde el primer nivel de nuestro directorio, no desde sus subdirectorios.
+
+Si tras ejecutar este comando volvemos a ejecutar `git status`, y todo ha ido bien, en el caso de nuestro ejemplo anterior veremos lo siguiente:
 ```
 zet@wukong:~/Escritorio/Hello_Git$  
 zet@wukong:~/Escritorio/Hello_Git$ git status 
@@ -59,14 +62,14 @@ Cambios a ser confirmados:
  
 zet@wukong:~/Escritorio/Hello_Git$
 ```
-Utilizar `git add` pone nuestro archivos en el area STAGE.
+Utilizar `git add` pone nuestro archivos en el área STAGE.
 
-![git_areas](/IMG/Git_areas_03.png "git add")
+![git_áreas](/IMG/Git_áreas_03.png "git add")
 
-## Area STAGE
+## área STAGE
 Ya casi tenemos el registro de nuestro repositorio, la fase en la que se encuentran ahora los archivos implicados se llama **STAGE** mientras están en el "escenario" los archivos puede seguir adelante y dejar registrados sus cambios en un registro ejecutando un 'commit' o salir de esta zona y volver al directorio de trabajo sin guardar nada.
 
-> ## Nota 2:
+> ## Nota 3:
 > Algunas acciones en **git** no pueden realizarse hasta que todos los archvos del directorio hayan sido registrados con un `commit` o descartados de alguna forma, osea que si hay algo todavía en STAGE algunas acciones no podrán realizarse y se nos informará de ello.
 
 

@@ -7,7 +7,7 @@ En estos sistemas operativos Git ya viene instalado por defecto.
 
 
 
-**Otros sistemas operativos:**
+**Otros sistemas operativos:**     
 Para cualquier otro sistema operativo, como Windows por ejemplo, en la misma web de Git encontraremos las instrucciones necesarias.
 
 > https://git-scm.com/

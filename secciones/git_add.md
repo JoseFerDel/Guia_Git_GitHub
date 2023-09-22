@@ -62,7 +62,7 @@ Cambios a ser confirmados:
  
 zet@wukong:~/Escritorio/Hello_Git$
 ```
-Utilizar `git add` pone nuestro archivos en el área STAGE.
+Utilizar `git add` pone nuestros archivos en el área STAGE.
 
 ![git_áreas](/IMG/Git_áreas_03.png "git add")
 

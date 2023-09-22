@@ -1,6 +1,6 @@
 [ÍNDICE](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/README.md)
 
-# **git init (iniciar repositorio)
+# **git init (iniciar repositorio)**
 
 El comando `git init` ejecutado desde un directorio indicará a git que queremos que ese directorio contenga un neuvo repositorio.
 
@@ -29,5 +29,5 @@ drwxr-xr-x 4 zet zet 4096 jul 10 17:47 objects
 drwxr-xr-x 4 zet zet 4096 jul 10 17:47 refs
 zet@wukong:~/Escritorio/Hello_Git/.git$ 
 ```
-El directorio **.git** es contiene los archivos necesarios para que git gestione el nuevo repositorio, si borramos **.git** nuestro directorio volverá a ser un directorio normal sin seguimiento de versiones.
+El directorio **.git** contiene los archivos necesarios para que **git** gestione el nuevo repositorio, si borramos **.git** nuestro directorio volverá a ser un directorio normal sin seguimiento de versiones.
 

@@ -78,4 +78,14 @@ Vemos que no da ningún error, el nombre se ha establecido.
 Esta modificación creará un archivo oculto en el directorio HOME del usuario llamado **.gitconfig**:    
 ![gitconfig](/IMG/gitconfig.jpg ".gitconfig")
 
+Si analizamos el contenido de este archivo veremos que dentro se encuentra la configuración que hemos realizado:
+```
+zet@wukong:~$  
+zet@wukong:~$ cat .gitconfig  
+[user] 
+        name = Zet 
+zet@wukong:~$
+```
+
+
 

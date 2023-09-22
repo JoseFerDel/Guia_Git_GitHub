@@ -9,7 +9,7 @@
 
 Aclarado esto vamos a describir cada uno por separado.    
 
-## **GIT** ![Git_logo](/IMG/Git_logo_mini.png "Git")
+![Git_logo](/IMG/Git_logo_mini.png "Git")
 
 Creado por **Linus Torvalds**       
 Su web oficial es esta: **https://git-scm.com/**    
@@ -27,7 +27,7 @@ Git es un sistema de control de versiones pensado sobretodo para ayudar con el d
 Para empezar a trabajar con **Git** este nos va a requerir un **usuario** y un **email**, de esta forma al trabajar con varias personas nuestro trabajo queda identificado. Esto es un requerimiento de **Git**, no podemos trabajar con el sin usuario y mail.
 
 
-## **GITHUB** 
+![GitHub_logo](/IMG/GitHub_logo_mini.png "Git")    
 Creado por: **Chris Wanstrath**, **P. J. Hyett**, **Tom Preston-Werner** y **Scott Chacon**.    
 Propietario dede 2018: **Microsoft**    
 El software que opera **GitHub** fue escrito en **Ruby on Rails**    

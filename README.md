@@ -15,7 +15,7 @@ Guia para a aprender a menajar el sistema de control de versión Git y su versi�
 
 * [Instalación de Git](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/install_git.md)
 
+* [Configuración inicial](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/config_git.md)
 
 
 ## **GITHUB**
-

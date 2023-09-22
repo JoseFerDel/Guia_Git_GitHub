@@ -1,6 +1,6 @@
 [ÍNDICE](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/README.md)
 
-# **Configuración básica**
+# **Configuración inicial**
 
 Para configurar **Git** introduciremos el comando `git config` seguido del nivel al que va a afectar dicha configuración (solo para el usuario actual, para todos, solo para un proyecto concreto, etc).
 
@@ -117,10 +117,11 @@ alias.arbol=log --graph --decorate --all --oneline
 alias.treeall=log --graph --decorate --all --oneline
 alias.tree=log --graph --decorate --oneline
 alias.subir=push -u origin Zet_main
-user.email=joseferdel@protonmail.com
-user.name=JoseFerDel
+user.email=fakemail@duck.com
+user.name=Zet
 zet@wukong:~/cosas/Proyectos_GITHUB/Guia_Git_GitHub$ 
 ```
+Esto nos mostrará información sobre nuestro git local como alias configurados o nuestro usuario y mail.
 
 
 

@@ -23,7 +23,8 @@ Por ejemplo:
 ![git status](/IMG/git_status.jpg "git status")
 
 
-
+> ## NOTA:
+> Es posible indicarle a git que ignore algún archivo mediante la edición del archivo `.gitignore` esto se explica más tarde.
 
 
 

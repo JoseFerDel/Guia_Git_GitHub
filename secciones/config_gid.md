@@ -55,3 +55,27 @@ Otro
     --show-scope          mostrar el scope de la configuración (worktree, local, global, system, command) 
     --default <valor>     con --get, usar el valor por defecto cuando falta una entrada
 ``` 
+
+Esto nos está indicando que el comando está incompleto y nos sugiere una lista de opciones a añadir para completarlo.
+
+
+En los siguientes pasos añadiremos alguna de estas opciones para configurar nuestro Git.
+
+
+## **Cambiar (o establecer) nombre de usuario:**
+
+Utilizaremos el sigueinte comando para establecer nuestro nombre de usuario:
+```   
+git config --global user.name “NOMBRE”
+``` 
+Por ejemplo así asignariamos el nombre de usuario "Zet":
+```
+zet@wukong:~/Escritorio/Hello_Git$ git config --global user.name "Zet"
+zet@wukong:~/Escritorio/Hello_Git$
+```
+Vemos que no da ningún error, el nombre se ha establecido.
+
+Esta modificación creará un archivo oculto en el directorio HOME del usuario llamado **.gitconfig**:    
+![gitconfig](/IMG/gitconfig.jpg ".gitconfig")
+
+

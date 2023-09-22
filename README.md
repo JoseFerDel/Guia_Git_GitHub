@@ -9,13 +9,13 @@ Guia para a aprender a menajar el sistema de control de versión Git y su versi�
       
 # **ÍNDICE**    
 
-* [Git y GitHub (Introducción)](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/git_y_github.md)
+* [Git y GitHub (Introducción)](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_y_github.md)
 
 ## **GIT**
 
-* Instalación de Git
+* [Instalación de Git](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/install_git.md)
 
 
 
-## **GIT**
+## **GITHUB**
 

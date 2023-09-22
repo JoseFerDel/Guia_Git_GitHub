@@ -25,9 +25,11 @@ Lo que nos dice esto es que git es gratuito y de código abierto, está diseñad
 Git es un sistema de control de versiones pensado sobretodo para ayudar con el desarrollo de software. Aunque nada nos impide trabajar con imagenes, webs, recetas de cocina, etc. Si el proyecto está formado por archivos se puede gestionar con Git.
 
 Para empezar a trabajar con **Git** este nos va a requerir un **usuario** y un **email**, de esta forma al trabajar con varias personas nuestro trabajo queda identificado. Esto es un requerimiento de **Git**, no podemos trabajar con el sin usuario y mail.
-
-
+      
+      
+      
 ![GitHub_logo](/IMG/GitHub_logo_mini.png "Git")    
+
 Creado por: **Chris Wanstrath**, **P. J. Hyett**, **Tom Preston-Werner** y **Scott Chacon**.    
 Propietario dede 2018: **Microsoft**    
 El software que opera **GitHub** fue escrito en **Ruby on Rails**    

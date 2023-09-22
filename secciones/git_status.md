@@ -9,7 +9,7 @@ El comando `git status`nos muestra el estado actual de nuestro repositorio, conc
 
 Solo podremos ejecutar el comando `git status`en repositorios gestionados por **git**, así que para poder ver el estado de un proyecto tenemos que haber ejecutado `git init` anteriormente estando dentro del directorio del proyecto para que el repositorio exista.
 
-Veremos en más detalle este comando en las explicaciones de los comandos `git add` y `git commit` donde utilizaremos el comando `git status` para ver el estado de nuestro repositorio tras cada ejemplo.
+Veremos en más detalle este comando en las explicaciones de los comandos `git init`, `git add` y `git commit` donde utilizaremos el comando `git status` para ver el estado de nuestro repositorio tras cada ejemplo.
 
 De momento basta con saber que el comando `git status` nos da información sobre nuestro repositorio y como sus archivos van evolucionando dentro del control de versiones de git.
 

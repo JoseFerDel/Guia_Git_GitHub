@@ -5,7 +5,9 @@
 
 Antes de ejecutar el comando `git init` para iniciar un nuevo repositorio los archivos que tengamos en ese momento se encuentran en un directorio de trabajo normal y corriente **sin seguimiento** por por parte de **git**.
 
-Después de ejecutar `git init` los archivos de ese directorio, si los hubiese, pasan a estar en seguimiento, en el momento en que creemos un nuevo documento, o editamos uno existente, dentro del directorio de nuestro repositorio **git** nos informará de que han habido cambios si ejecutamos el comando `git status`, ahora los archivos siguen en el area directorio de trabajo, pero ahora con seguimeinto porque al ejecutar `git init` le estamos diciendo a **git** que le eche un ojo a ese directorio por si sufre cambios ,**git** nos informará de la existencia de estos archivos nuevos o con cambios si ejecutamos el comando `git status`.
+* Después de ejecutar `git init` los archivos de ese directorio, si los hubiese, pasan a estar en seguimiento.
+* Si ejecutamos el comando `git status` **git** nos informará de que han habido cambios si hemos creado un nuevo documento, o editado uno existente, se nos informa de los cambios.
+* Ahora los archivos siguen en el directorio de trabajo pero ahora con seguimeinto porque al ejecutar `git init` le estamos diciendo a **git** que le eche un ojo a ese directorio por si sufre cambios ,**git** nos informará de la existencia de estos archivos nuevos o con cambios si ejecutamos el comando `git status`.
 
 Por ejemplo:
 ``` 
@@ -23,12 +25,13 @@ zet@wukong:~/Escritorio/Hello_Git$
 ``` 
 
 En este directorio ya hemos ejecutado `git init` así que **git** lo tiene en seguimiento, se ha agregado un archivo y después hemos ejecutado 'git status' para ver el estado del repositorio.
-Aquí podemos ver que aparece un nuevo archivo bajo la sección "Archivos sin seguimiento:", que aparezca en esta sección significa que **hellogit.py** es un archivo nuevo, no una modificación.
+Aquí podemos ver que aparece un nuevo archivo bajo la sección "Archivos sin seguimiento:", que aparezca en esta sección significa que **hellogit.py** es un archivo nuevo, no una modificación de un archivo que **git** ya conocía.
 
 
 Para "capturar" el estado del repositorio en este momento con el nuevo archivo recién creado **hellogit.py** ejecutaremos el comando `git add`.
 
-Obtener este registro del estado actual del repositorio tiene dos fases, una al ejecutar `git add` y otra al ejecutar justo después `git commit` (Se habla de `git commit` más adelante.)
+> ## Nota
+> Obtener este registro del estado actual del repositorio tiene dos fases, una al ejecutar `git add` y otra al ejecutar justo después `git commit` (Se habla de `git commit` más adelante.)
 
 Así que ejecutamos `git add` de la siguiente forma:
 
@@ -57,3 +60,11 @@ zet@wukong:~/Escritorio/Hello_Git$
 Utilizar `git add` pone nuestro archivos en el area STAGE.
 
 ![git_areas](/IMG/Git_areas_03.png "git add")
+
+Ya casi tenemos el registro de nuestro repositorio, la fase en la que se encuentrana hora los archivos implicados se llama **STAGE** mientras están en el escenario los archivos puede seguir adelante y dejar registrados sus cambios en un registro ejecutando un 'commit' o salir de esta zona y volver al directorio de trabajo sin guardar nada.
+
+> ## Nota 2:
+> Algunas acciones no pueden realizarse hasta que todos los archvos del directorio hayan sido registrados con un `commit` o descartados de alguna forma.
+
+
+

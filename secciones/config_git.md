@@ -64,10 +64,11 @@ En los siguientes pasos añadiremos alguna de estas opciones para configurar nue
 
 ## **Cambiar (o establecer) nombre de usuario:**
 
-Utilizaremos el sigueinte comando para establecer nuestro nombre de usuario:
+Utilizaremos la siguiente sintaxis para establecer nuestro nombre de usuario:
 ```   
 git config --global user.name “NOMBRE”
 ``` 
+
 Por ejemplo así asignariamos el nombre de usuario "Zet":
 ```
 zet@wukong:~/Escritorio/Hello_Git$ git config --global user.name "Zet"

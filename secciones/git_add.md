@@ -29,10 +29,11 @@ En este directorio ya hemos ejecutado `git init` así que **git** lo tiene en se
 Aquí podemos ver que aparece un nuevo archivo bajo la sección "Archivos sin seguimiento:", que aparezca en esta sección significa que **hellogit.py** es un archivo nuevo, no una modificación de un archivo que **git** ya conocía.
 
 
-Para "capturar" el estado del repositorio en este momento con el nuevo archivo recién creado **hellogit.py** ejecutaremos el comando `git add`.
-
+Para "capturar" el estado del repositorio en este momento con el nuevo archivo recién creado **hellogit.py** ejecutaremos el comando `git add`.     
+    
+    
 > ## Nota
-> Obtener este registro del estado actual del repositorio tiene dos fases, una al ejecutar `git add` y otra al ejecutar justo después `git commit` (Se habla de `git commit` más adelante.)
+> Guardar el estado del repositorio tiene dos fases, una al ejecutar `git add` y otra al ejecutar justo después `git commit` (Se habla de `git commit` más adelante.)
 
 Así que ejecutamos `git add` de la siguiente forma:
 
@@ -62,10 +63,14 @@ Utilizar `git add` pone nuestro archivos en el area STAGE.
 
 ![git_areas](/IMG/Git_areas_03.png "git add")
 
-Ya casi tenemos el registro de nuestro repositorio, la fase en la que se encuentrana hora los archivos implicados se llama **STAGE** mientras están en el escenario los archivos puede seguir adelante y dejar registrados sus cambios en un registro ejecutando un 'commit' o salir de esta zona y volver al directorio de trabajo sin guardar nada.
+## Area STAGE
+Ya casi tenemos el registro de nuestro repositorio, la fase en la que se encuentran ahora los archivos implicados se llama **STAGE** mientras están en el "escenario" los archivos puede seguir adelante y dejar registrados sus cambios en un registro ejecutando un 'commit' o salir de esta zona y volver al directorio de trabajo sin guardar nada.
 
 > ## Nota 2:
-> Algunas acciones no pueden realizarse hasta que todos los archvos del directorio hayan sido registrados con un `commit` o descartados de alguna forma.
+> Algunas acciones en **git** no pueden realizarse hasta que todos los archvos del directorio hayan sido registrados con un `commit` o descartados de alguna forma, osea que si hay algo todavía en STAGE algunas acciones no podrán realizarse y se nos informará de ello.
+
+
+
 
 
 

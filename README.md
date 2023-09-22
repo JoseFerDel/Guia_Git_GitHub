@@ -19,6 +19,8 @@ Guia para a aprender a menajar el sistema de control de versión Git y su versi�
 
 * [Configuración inicial](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/config_git.md)
 
-* Git init (iniciar repositorio)
+* [Git init (iniciar repositorio)](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_init.md)
+
+
 
 ## **GITHUB**

@@ -6,11 +6,11 @@ Para explicar lo que hacen los comandos `git add` y `git commit` antes debemos e
 
 ![git_areas.png](/IMG/Git_areas.png "Areas de git")
 
-## **AREA WORKING DIRECTORY**
+## **DIRECTORIO DE TRABAJO**
 
 Antes de ejecutar el comando `git init` para iniciar un nuevo repositorio los archivos que tengamos en ese momento se encuentran en un Working directory (directorio de trabajo normal y corriente) **sin seguimiento** por por parte de **git**.
 
-Después de ejecutar `git init` los archivos de ese directorio pasan a estar en seguimiento, en el momento en que creemos un nuevo documento, o editamos uno existente, dentro del directorio de nuestro repositorio **git** nos informará de que han habido cambios si ejecutamos el comando `git status`, ahora los archivos siguen en el area **Working directory**, pero ahora con seguimeinto porque al ejecutar `git init` le estamos diciendo a **git** que les eche un ojo a ese directorio por si sufre cambios ,**git** nos informará de la existencia de estos archivos nuevos o con cambios si ejecutamos el comando `git status`
+Después de ejecutar `git init` los archivos de ese directorio, si los hubiese, pasan a estar en seguimiento, en el momento en que creemos un nuevo documento, o editamos uno existente, dentro del directorio de nuestro repositorio **git** nos informará de que han habido cambios si ejecutamos el comando `git status`, ahora los archivos siguen en el area **Working directory**, pero ahora con seguimeinto porque al ejecutar `git init` le estamos diciendo a **git** que les eche un ojo a ese directorio por si sufre cambios ,**git** nos informará de la existencia de estos archivos nuevos o con cambios si ejecutamos el comando `git status`
 
 ## **git status**
 ``` 
@@ -70,7 +70,7 @@ Utilizar `git add` pone nuestro archivos en el area STAGE.
 
 Ahora nuestro archivo aparece en la sección "**Cambios a ser confirmados**", esto es el area STAGE, puede parecer redundante pero git está pensado precisamente para eso, para tener control de todo, los archivos en el area STAGE siguen sin formar parte de ninguna "foto" del estado de nuestro proyecto, sigamos que solo falta confirmar, para ello utilizaremos el comando `git commit`.
 
-
+## **Area 
 
 
 

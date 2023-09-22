@@ -86,6 +86,46 @@ zet@wukong:~$ cat .gitconfig  
         name = Zet 
 zet@wukong:~$
 ```
+## **Cambiar (o establecer) email de usuario:**
+
+El comando para establecer nuestro mail de usuario en Git tiene esta sintaxis:    
+`git config --global user.email “CORREO ELECTRONICO”`
+
+
+Si introducimos el comando correctamente podremos volver a examinar el archivo **.gitconfig** donde ahora veremos el mail:
+
+```
+zet@wukong:~$ git config --global user.email "zetmail@duck.com"
+zet@wukong:~$ 
+zet@wukong:~$ cat .gitconfig 
+[user]
+        name = Zet
+        email = fakemail@duck.com
+zet@wukong:~$ 
+zet@wukong:~$ 
+```
+
+Estas dos configuraciones, el usuario y el mail, son lo mínimo que necesitamos para empezar a trabajar con Git.
+
+Otra forma de comprobar que usuario y mail tenemos configurado en nuestor git es ejecutar el siguiente comando:
+
+`git config --global --list'`
+
+```
+zet@wukong:~/cosas/Proyectos_GITHUB/Guia_Git_GitHub$ git config --global --list
+alias.arbol=log --graph --decorate --all --oneline
+alias.treeall=log --graph --decorate --all --oneline
+alias.tree=log --graph --decorate --oneline
+alias.subir=push -u origin Zet_main
+user.email=joseferdel@protonmail.com
+user.name=JoseFerDel
+zet@wukong:~/cosas/Proyectos_GITHUB/Guia_Git_GitHub$ 
+```
+
+
+
+
+
 
 
 

@@ -2,14 +2,14 @@
 
 # **git log**
 
-Cada vez que ejecutamos un **commit** guardamos un registro del estado de los archivos del prooyecto en ese momemento.
-Eto nos permite volver a ese estado si realizamos cambios inconvenientes en posteriores actualziaciones.
+Cada vez que ejecutamos un **commit** guardamos un registro del estado de los archivos del proyecto en ese momemento.    
+Esto nos permite volver a ese estado si realizamos cambios inconvenientes en posteriores actualziaciones.
 
 &nbsp;
 
 Para ver que registros (commits) tenemos guardados en nuestro proyecto utilizaremos el comando `git log`
 
-Sipongamos que tenemos un proyecto nuevo, en el hemos creado un archivo llamado "hellogit.py" y después hemos hecho un **commit** con la nota "Este es mi primer commit.".
+Supongamos que tenemos un proyecto nuevo, en él hemos creado un archivo llamado "hellogit.py" y después hemos ejecutado `git add` + `git commit` con la nota "Este es mi primer commit.".
 
 Si ejecutamos `git log` veremos esto:    
 ![git_log](/IMG/git_log_01.png "git log")

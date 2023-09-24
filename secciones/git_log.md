@@ -42,6 +42,6 @@ zet@wukong:~/Escritorio/Hello_Git$ git commit -m "Este es mi segundo commit."
 zet@wukong:~/Escritorio/Hello_Git$ 
 ```
 
-Si volvemos a ejecutar `git log`  veremos que ahora aparece este nuevo registro que acabamos de crear con su dientificador único.
+Si volvemos a ejecutar `git log`  veremos que ahora aparece este nuevo registro que acabamos de crear con su identificador único.
 
 ![git_log](/IMG/git_log_04.png "git log")

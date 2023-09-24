@@ -30,6 +30,6 @@ En la rama main
 nada para hacer commit, el árbol de trabajo está limpio
 zet@wukong:~/Escritorio/Hello_Git$
 ```
-Con esto completaríamos todo el ciclo que nos lleva a guardar un registro de nuestro proyecto en nuestra máquina local.
+Con esto completaríamos todo el ciclo que nos lleva a guardar un registro de nuestro proyecto en nuestra máquina local, el comando `git push` sirve para subir los cambios a un servidor remoto (GitHUb) y se explicará en la sección de **GitHUb**.
 
 Cada vez que queramos hacer una "foto" de nuestro proyecto repetiremos `git add` y `git commit` y si queremos saber si hay algo pendiente en git ejecutaremos el comando `git status`. Hasta aquí lo básico.

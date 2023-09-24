@@ -17,7 +17,11 @@ Guia para a aprender a menajar el sistema de control de versi√≥n Git y su versi√
 
 * [Configuraci√≥n inicial](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/config_git.md)
 
+&nbsp;    
+
 * [git status](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_status.md)
+
+&nbsp;    
 
 * [git init (iniciar repositorio)](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_init.md)
 
@@ -25,7 +29,13 @@ Guia para a aprender a menajar el sistema de control de versi√≥n Git y su versi√
 
 * [git commit](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_commit.md)
 
+&nbsp;    
 
+* [git  log](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_log.md)
+
+&nbsp;    
+&nbsp;    
+&nbsp;    
 
 ## **GITHUB**
 

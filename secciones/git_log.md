@@ -5,29 +5,29 @@
 Cada vez que ejecutamos un **commit** guardamos un registro del estado de los archivos del proyecto en ese momemento.    
 Esto nos permite volver a ese estado si realizamos cambios inconvenientes en posteriores actualziaciones.
 
-&nbsp;
+&nbsp;    
 
 Para ver que registros (commits) tenemos guardados en nuestro proyecto utilizaremos el comando `git log`
 
 Supongamos que tenemos un proyecto nuevo, en él hemos creado un archivo llamado "hellogit.py" y después hemos ejecutado `git add` + `git commit` con la nota "Este es mi primer commit.".
 
 Si ejecutamos `git log` veremos algo como esto:    
-![git_log](/IMG/git_log_01.png "git log")
+![git_log](/IMG/git_log_01.png "git log")      
 En este caso solo hay un registro.
 
-&nbsp;
+&nbsp;    
 
-Esto nos mostrará un identificador tras la palabra "commit", este código representa a este commit en concreto y podremos utilizarlo más adeltante para interactuar con el.
+Esto nos mostrará un identificador tras la palabra "**commit**", este código representa a este commit en concreto y podremos utilizarlo más adeltante para interactuar con el.
 
 También veremos el **autor** del commit, la **fecha** en que se hizo y la **nota** adjunta, esta nota es ese texto que tenemos que poner siempre que ejecutamos un **commit**.
 
-&nbsp;
+&nbsp;    
 
 Ahora creamos otro archivo en el mismo directorio que el anterior y le ponemos el nombre “hellogit_2.py”
 
 ![git_log](/IMG/git_log_02.png "git log")
 
-Si ahora ejecutamos otra vez el comando `git status` veremos que se nos informa de que nuestro nuevo archivo no está en seguimiento.
+Si ahora ejecutamos otra vez el comando `git status` se nos informará de que nuestro nuevo archivo no está en seguimiento.
 
 ![git_log](/IMG/git_log_03.png "git log")
 
@@ -43,10 +43,14 @@ zet@wukong:~/Escritorio/Hello_Git$ git commit -m "Este es mi segundo commit."
 zet@wukong:~/Escritorio/Hello_Git$ 
 ```
 
-Si volvemos a ejecutar `git log`  veremos que ahora aparece este nuevo registro que acabamos de crear con su identificador único.
+&nbsp;    
+
+Si volvemos a ejecutar `git log` ahora aparece este nuevo registro que acabamos de crear con su identificador único.
 
 ![git_log](/IMG/git_log_04.png "git log")
 
+&nbsp;    
+&nbsp;    
 
 ## **Formas de utilizar "git log"**
 

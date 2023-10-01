@@ -75,12 +75,16 @@ Ejemplo:
 ![git_log](/IMG/git_log_06.png "git log")      
 
 
+## git log --decorate    
+Este comando muestra informacióne extra en los commits, como tags que hayamos creado, información sobre las ramas, etc.
 
-Si le agregamos el atributo `--graph` el comando quedará así:
+
 ## git log --graph    
-![git_log](/IMG/git_log_20.png "git log")      
-Esto hace aparecer una línea a la izquierda de los logs que trata de representar con caracteres la forma de las ramas de nuestro proyecto, en este caso solo hay una rama.
+Este comando mestra de forma gráfica (en **ASCII**) los cambios que nuestro log ha tenido a lo largo del tiempo en las diferentes ramas.
 
-&nbsp;    
+Ejemplo:     
+![git_log](/IMG/git_log_08.png "git log")      
+
+
 
 

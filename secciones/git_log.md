@@ -55,8 +55,7 @@ Si volvemos a ejecutar `git log` ahora aparece este nuevo registro que acabamos 
 ## **Formas de utilizar "git log"**
 Esta no es la única forma de ver al salida del comando 'git log', mediante algunos atrubutos podemos modificar el comando para que nos devuelva una salida más atractiva.    
 
-Aquí muestro una posible forma de formatear la salida de `git log`, es solo un ejemplo, hay mas formas.
-    
+Aquí muestro una posible forma de formatear la salida de `git log`, es solo un ejemplo, hay mas formas.     
 &nbsp;    
 
 Si ejecutamos el comando "git log" sin atributos vemos algo como esto:    
@@ -64,9 +63,22 @@ Si ejecutamos el comando "git log" sin atributos vemos algo como esto:
 
 &nbsp;    
 
+Los siguientes son algunos atributos que se pueden añadir al comando `git log`, en solitario o combinados.
+
+&nbsp;    
+&nbsp;    
+
+## git log --oneline    
+Este comando comprime la salida de `git log` haciendo que ocupe una sola línea, el código abreviado que aparece en cada línea se puede utilizar de la misma forma que utilizaríamos la versión larga.
+
+Ejemplo:     
+![git_log](/IMG/git_log_20.png "git log")      
+
+
+
 Si le agregamos el atributo `--graph` el comando quedará así:
 ## git log --graph    
-![git_log](/IMG/git_log_06.png "git log")      
+![git_log](/IMG/git_log_20.png "git log")      
 Esto hace aparecer una línea a la izquierda de los logs que trata de representar con caracteres la forma de las ramas de nuestro proyecto, en este caso solo hay una rama.
 
 &nbsp;    

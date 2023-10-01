@@ -72,7 +72,7 @@ Los siguientes son algunos atributos que se pueden añadir al comando `git log`,
 Este comando comprime la salida de `git log` haciendo que ocupe una sola línea, el código abreviado que aparece en cada línea se puede utilizar de la misma forma que utilizaríamos la versión larga.
 
 Ejemplo:     
-![git_log](/IMG/git_log_6.png "git log")      
+![git_log](/IMG/git_log_06.png "git log")      
 
 
 

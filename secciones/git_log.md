@@ -123,6 +123,12 @@ Así:
 `git log --author="Jack\|Zet"`
 
 
+## git log --grep="Mensaje_de_commit"
+
+Este comando filtra los commits por su mensaje adjunto, si el texto introducido entre las comillas está contenido en algún commit este se mostrará.
+
+![git_log](/IMG/git_log_12.png "git log")      
+
 
 
 

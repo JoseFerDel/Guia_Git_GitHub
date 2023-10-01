@@ -84,6 +84,8 @@ Este comando mestra de forma gráfica (en **ASCII**) los cambios que nuestro log
 Ejemplo:     
 ![git_log](/IMG/git_log_08.png "git log")      
 
+&nbsp;    
+&nbsp;    
 
 # **Filtros**
 
@@ -91,12 +93,13 @@ También podemos filtrar la salida para que se muestren solo unos commits concre
 
 Por ejemplo:
 
-
+## POR CANTIDAD:
 ## git log -[Nº_de_commits]
 Muestra la cantidad de commits indicada tras el guión, en orden de más a menos recientes.     
 Por ejemplo `git log -3` muestra los tres **commits** mas recientes:     
 ![git_log](/IMG/git_log_09.png "git log")      
 
+&nbsp;    
 
 ## POR FECHA:
 ## git log --after="[Fecha]"
@@ -114,6 +117,8 @@ De la misma forma que utilizamos `--after` para hacer referencia a fechas poster
 Por ejemplo:     
 `git log --after="1-7-2023" --before="1-8-2023"`
 
+&nbsp;    
+
 ## POR AUTOR:
 ## git log --author="[AUTOR]"
 
@@ -124,6 +129,8 @@ También es posible indicar varios autores en este filtro separandolos con una t
 Así:
 `git log --author="Jack\|Zet"`
 
+&nbsp;    
+
 ## POR MENSAJE DE COMMIT:
 ## git log --grep="Mensaje_de_commit"
 
@@ -131,14 +138,19 @@ Este comando filtra los commits por su mensaje adjunto, si el texto introducido 
 
 ![git_log](/IMG/git_log_12.png "git log")     
 
+&nbsp;    
+
 ## POR ARCHIVO:
-## git log -- ./secciones/git_add.md
+## git log -- [Ruta_de_archivo]
 
 Este comando nos permite buscar los commits que afectaron al archvio indicado, los dobles guines sin nada más indican a git que lo siguiente es una ruta de archivo.
 
 Por ejemplo aquí buscamos todos los commits que afectaron al archivo **git_add.md**:
 ![git_log](/IMG/git_log_13.png "git log")     
-Si el archivo no se encuentra en el directorio activo en ese momento tendremos que indicar su ruta.
+A no ser que estemos en el mismo directorio que el arhibo buscado tendremos que indicar su ruta.
 
+## POR CONTENIDO
+git log -S"Contenido"
 
-
+Con este comando podemos encontrar el commit concreto en que se agrego cierto contenido a un archivo, por ejemplo si queremos buscar en que commit se añadió a un archivo el string "Hola gente!" el comando sería `git log -S"Hola gente!"`
+Esto se llama **pickaxe** y tiene la forma **-S""**, la cadena buscada va entre las comillas.

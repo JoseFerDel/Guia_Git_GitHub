@@ -97,6 +97,8 @@ Muestra la cantidad de commits indicada tras el guión, en orden de más a menos
 Por ejemplo `git log -3` muestra los tres **commits** mas recientes:     
 ![git_log](/IMG/git_log_09.png "git log")      
 
+
+## POR FECHA:
 ## git log --after="[Fecha]"
 Muestra los commits posteriores a la fecha indicada tras el atributo "**--after**" y entre comillas. 
 Por ejemplo:     
@@ -112,7 +114,7 @@ De la misma forma que utilizamos `--after` para hacer referencia a fechas poster
 Por ejemplo:     
 `git log --after="1-7-2023" --before="1-8-2023"`
 
-
+## POR AUTOR:
 ## git log --author="[AUTOR]"
 
 Filtra los commits por el usuario que los creo.
@@ -122,13 +124,21 @@ También es posible indicar varios autores en este filtro separandolos con una t
 Así:
 `git log --author="Jack\|Zet"`
 
-
+## POR MENSAJE DE COMMIT:
 ## git log --grep="Mensaje_de_commit"
 
 Este comando filtra los commits por su mensaje adjunto, si el texto introducido entre las comillas está contenido en algún commit este se mostrará.
 
-![git_log](/IMG/git_log_12.png "git log")      
+![git_log](/IMG/git_log_12.png "git log")     
 
+## POR ARCHIVO:
+## git log -- ./secciones/git_add.md
+
+Este comando nos permite buscar los commits que afectaron al archvio indicado, los dobles guines sin nada más indican a git que lo siguiente es una ruta de archivo.
+
+Por ejemplo aquí buscamos todos los commits que afectaron al archivo **git_add.md**:
+![git_log](/IMG/git_log_13.png "git log")     
+Si el archivo no se encuentra en el directorio activo en ese momento tendremos que indicar su ruta.
 
 
 

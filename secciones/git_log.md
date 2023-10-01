@@ -9,7 +9,7 @@ Esto nos permite volver a ese estado si realizamos cambios inconvenientes en pos
 
 Para ver que registros (commits) tenemos guardados en nuestro proyecto utilizaremos el comando `git log`
 
-Supongamos que tenemos un proyecto nuevo, en él hemos creado un archivo llamado "hellogit.py" y después hemos ejecutado `git add` + `git commit` con la nota "Este es mi primer commit.".
+por ejemplo, supongamos que tenemos un proyecto nuevo, en él hemos creado un archivo llamado "hellogit.py" y después hemos ejecutado `git add` + `git commit` con la nota "Este es mi primer commit.".
 
 Si ejecutamos `git log` veremos algo como esto:    
 ![git_log](/IMG/git_log_01.png "git log")      
@@ -53,36 +53,22 @@ Si volvemos a ejecutar `git log` ahora aparece este nuevo registro que acabamos 
 &nbsp;    
 
 ## **Formas de utilizar "git log"**
+Esta no es la única forma de ver al salida del comando 'git log', mediante algunos atrubutos podemos modificar el comando para que nos devuelva una salida más atractiva.    
 
-La salida del comando `git log`se puede modificar utilizando algunos atributos.
 Aquí muestro una posible forma de formatear la salida de `git log`, es solo un ejemplo, hay mas formas.
     
 &nbsp;    
 
-Si ejecutamos el comando "git log" sin atributos vemos lo siguiente:    
+Si ejecutamos el comando "git log" sin atributos vemos algo como esto:    
 ![git_log](/IMG/git_log_05.png "git log")
 
 &nbsp;    
 
 Si le agregamos el atributo `--graph` el comando quedará así:
 ## git log --graph    
-![git_log](/IMG/git_log_06.png "git log")
-Esto hace aparecer una línea a la izquierda de los logs que representa la forma de las ramas de nuestro proyecto, en este caso solo hay una rama.
+![git_log](/IMG/git_log_06.png "git log")      
+Esto hace aparecer una línea a la izquierda de los logs que trata de representar con caracteres la forma de las ramas de nuestro proyecto, en este caso solo hay una rama.
 
 &nbsp;    
-
-Si a esto le añadimos el atributo `--pretty=oneline` el comando quedará así:
-## git log --graph --pretty=oneline
-![git_log](/IMG/git_log_07.png "git log")
-Ahora a `graph` le hemos añadido `--pretty=oneline` que hace que el texto se vea más bonito y con cada registro en una sola línea, a costa de mostrar menos información por registro.
-
-
-## **Otras formas de mostrar el log:**
-
-## git log --oneline
-![git_log](/IMG/git_log_09.png "git log")
-Con `--oneline` se nos muestra una versión compactada del log donde veremos los 7 primeros carácteres del código de cada commit y su nota.
-
-
 
 

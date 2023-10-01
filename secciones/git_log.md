@@ -98,10 +98,31 @@ Por ejemplo `git log -3` muestra los tres **commits** mas recientes:
 ![git_log](/IMG/git_log_09.png "git log")      
 
 ## git log --after="[Fecha]"
-Muestra los commits que coincidan con la fecha indicada tras el atributo "**--after**" entre comillas. 
+Muestra los commits posteriores a la fecha indicada tras el atributo "**--after**" y entre comillas. 
 Por ejemplo:     
 ![git_log](/IMG/git_log_10.png "git log")      
 --after soporta varios formatos de fecha.
+
+También podemos utilizar la palabra clave "yesterday" para referirnos a todos los commits posteriores al día de ayer:
+![git_log](/IMG/git_log_11.png "git log")      
+
+
+De la misma forma que utilizamos `--after` para hacer referencia a fechas posteriores a la indicada podemos utilizar el atributo `--before` para hacer referencia a fechas anteriores a la indicada, o una combinación de ambos para referirnos a un rango de fechas.
+
+Por ejemplo:     
+`git log --after="1-7-2023" --before="1-8-2023"`
+
+
+## git log --author="[AUTOR]"
+
+Filtra los commits por el usuario que los creo.
+
+También es posible indicar varios autores en este filtro separandolos con una tubería escapada --> `\|`:
+
+Así:
+`git log --author="Jack\|Zet"`
+
+
 
 
 

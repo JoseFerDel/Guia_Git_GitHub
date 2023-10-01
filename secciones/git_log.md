@@ -53,9 +53,8 @@ Si volvemos a ejecutar `git log` ahora aparece este nuevo registro que acabamos 
 &nbsp;    
 
 ## **Formas de utilizar "git log"**
-Esta no es la única forma de ver al salida del comando 'git log', mediante algunos atrubutos podemos modificar el comando para que nos devuelva una salida más atractiva.    
+Esta no es la única forma de ver al salida del comando `git log`, mediante algunos atrubutos podemos modificar el comando para que nos devuelva una salida más atractiva. En los siguientes ejemplos mostraré algunas formas de formatear el comando `git log`, existen más formas.    
 
-Aquí muestro una posible forma de formatear la salida de `git log`, es solo un ejemplo, hay mas formas.     
 &nbsp;    
 
 Si ejecutamos el comando "git log" sin atributos vemos algo como esto:    
@@ -85,6 +84,24 @@ Este comando mestra de forma gráfica (en **ASCII**) los cambios que nuestro log
 Ejemplo:     
 ![git_log](/IMG/git_log_08.png "git log")      
 
+
+# **Filtros**
+
+También podemos filtrar la salida para que se muestren solo unos commits concretos.
+
+Por ejemplo:
+
+
+## git log -[Nº_de_commits]
+Muestra la cantidad de commits indicada tras el guión, en orden de más a menos recientes.     
+Por ejemplo `git log -3` muestra los tres **commits** mas recientes:     
+![git_log](/IMG/git_log_09.png "git log")      
+
+## git log --after="[Fecha]"
+Muestra los commits que coincidan con la fecha indicada tras el atributo "**--after**" entre comillas. 
+Por ejemplo:     
+![git_log](/IMG/git_log_10.png "git log")      
+--after soporta varios formatos de fecha.
 
 
 

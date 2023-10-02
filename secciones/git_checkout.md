@@ -25,6 +25,7 @@ Si en un momento dado consideramos que fue un error haber creado ese archivo pod
 
 Así:     
 ![git_checkout](/IMG/git_checkout_03.png "Archivo")      
+El estado `detached HEAD` hace refencia a que al mover HEAD a otro commit nos hemos desenganchado de Zet_main, la punta de la rama, normalmente **HEAD** y el final de la rama van juntos.
 
 &nbsp; 
 
@@ -39,7 +40,7 @@ En este caso se ha generado una rama nueva sin nombre, `(HEAD desacoplado en 9c2
 
 &nbsp; 
 
-Para volver a nuestra commit más reciente, allí donde se encuentra el final real de nuestra rama, ejecutaremos el comando `git checkout`pero esta vez apuntando al nombre de la rama "**Zet_main**.
+Para volver a nuestra commit más reciente, allí donde se encuentra el final real de nuestra rama, y que todo quede como al principio ejecutaremos el comando `git checkout`pero esta vez apuntando al nombre de la rama "**Zet_main**.
 
 Así:     
 ![git_checkout](/IMG/git_checkout_06.png "Archivo")      

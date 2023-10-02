@@ -14,9 +14,12 @@ Para ver como funciona veamos este directorio donde se encuentra un archivo llam
 
 ![git_checkout](/IMG/git_checkout_01.png "Archivo")      
 
+&nbsp; 
 
 Ahora mostramos la versión comprimida del log de los 3 últimos registros con el comando `git log -3 --oneline`:     
 ![git_checkout](/IMG/git_checkout_02.png "Archivo")      
+
+&nbsp; 
 
 Veremos que según la nota del commit con código `47030e2` ahí es donde se creo el archivo.
 
@@ -25,13 +28,16 @@ Si en un momento dado consideramos que fue un error haber creado ese archivo pod
 Así:     
 ![git_checkout](/IMG/git_checkout_03.png "Archivo")      
 
-
+&nbsp; 
 
 Si volvemos a comprobar el contenido de nuestro directorio vemos que ahora el archivo "git_checkout.md" no existe, estamos en un registro anterior y todo está como en el momento en que hicimos ese commit, tanto en lo que respecta al contenido de los archivos a su existencia:
 ![git_checkout](/IMG/git_checkout_04.png "Archivo")      
+
+&nbsp; 
 
 Esto ha provocado que HEAD y la punta de nuestra rama ya no estén sincronizadas, están en posiciones diferentes, podemos comprobar esto con el comando `git branch` que nos informará de la rama en la que nos encontramos:
 Mover el HEAD a otro registro provoca que 
 ![git_checkout](/IMG/git_checkout_05.png "Archivo")      
 En este caso se ha generado una rama nueva sin nombre desde la nueva posición de HEAD, si ahora hicieramos nuevos commits desde aquí estos crecerían desde este punto.
 
+&nbsp; 

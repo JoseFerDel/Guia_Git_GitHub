@@ -28,13 +28,20 @@ Así:
 
 &nbsp; 
 
-Si volvemos a comprobar el contenido de nuestro directorio vemos que ahora el archivo "git_checkout.md" no existe, estamos en un registro anterior y todo está como en el momento en que hicimos ese commit, tanto en lo que respecta al contenido de los archivos a su existencia:     
+Si volvemos a comprobar el contenido de nuestro directorio vemos que ahora el archivo "git_checkout.md" no existe, estamos en un registro anterior y todo está como en el momento en que hicimos ese commit, tanto en lo que respecta al contenido de los archivos como a su existencia:     
 ![git_checkout](/IMG/git_checkout_04.png "Archivo")      
 
 &nbsp; 
 
-Esto ha provocado que HEAD y la punta de nuestra rama ya no estén sincronizadas, están en posiciones diferentes, podemos comprobar esto con el comando `git branch` que nos informará de la rama en la que nos encontramos:     
+Esto ha provocado que **HEAD** y la punta de nuestra rama **Zet_main** ya no estén sincronizadas, están en posiciones diferentes, podemos comprobar esto con el comando `git branch` que nos informará de las ramas existentes y coloca un asterisco en aquella en la que nos encontramos:     
 ![git_checkout](/IMG/git_checkout_05.png "Archivo")      
-En este caso se ha generado una rama nueva sin nombre desde la nueva posición de HEAD, si ahora hicieramos nuevos commits desde aquí estos crecerían desde este punto.
+En este caso se ha generado una rama nueva sin nombre, `(HEAD desacoplado en 9c257af)`, desde la nueva posición de HEAD, si ahora hicieramos nuevos commits desde aquí estos crecerían desde este punto.
 
 &nbsp; 
+
+Para volver a nuestra commit más reciente, allí donde se encuentra el final real de nuestra rama, ejecutaremos el comando `git checkout`pero esta vez apuntando al nombre de la rama "**Zet_main**.
+
+Así:     
+![git_checkout](/IMG/git_checkout_06.png "Archivo")      
+
+Así, el comando `git checkout Zet_main` vuelve a mover **HEAD** al registro donde se encuentra **Zet_main** y además, como hemos utilizado el nombre de la rama y no el id del commit donde se encuentra, también nos cambia de rama. Si hubiesemos ejecutado `git checkout' simplemente apuntando a la id donde se encutra **Zet_main** nos desplazariamos a ese registro pero seguriamos desenganchados de **Zet_main**.

@@ -80,6 +80,10 @@ Los siguientes son algunos atributos que se pueden añadir al comando `git log`,
 &nbsp;    
 &nbsp;    
 
+## git log --all
+Este comando muestra todos los registros de todas las ramas, sin este atributo solo veríamos los registros de la rama en la que estamos (osea donde se encuentra **HEAD**)
+
+
 ## git log --oneline    
 Este comando comprime la salida de `git log` haciendo que ocupe una sola línea, el código abreviado que aparece en cada línea se puede utilizar de la misma forma que utilizaríamos la versión larga.
 

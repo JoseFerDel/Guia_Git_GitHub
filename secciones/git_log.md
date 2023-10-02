@@ -7,17 +7,16 @@ Esto nos permite volver a ese estado si realizamos cambios inconvenientes en pos
 
 &nbsp;    
 
-Para ver que registros (commits) tenemos guardados en nuestro proyecto utilizaremos el comando `git log`
+Para ver que registros (commits) tenemos guardados en nuestro proyecto utilizaremos el comando `git log`.
 
-por ejemplo, supongamos que tenemos un proyecto nuevo, en él hemos creado un archivo llamado "hellogit.py" y después hemos ejecutado `git add` + `git commit` con la nota "Este es mi primer commit.".
+Por ejemplo, supongamos que tenemos un proyecto nuevo, en él hemos creado un archivo llamado "hellogit.py" y después hemos ejecutado `git add` + `git commit` con la nota "Este es mi primer commit.".
 
 Si ejecutamos `git log` veremos algo como esto:    
 ![git_log](/IMG/git_log_01.png "git log")      
-En este caso solo hay un registro.
 
 &nbsp;    
 
-Esto nos mostrará un identificador tras la palabra "**commit**", este código representa a este commit en concreto y podremos utilizarlo más adeltante para interactuar con el.
+Esto nos mostrará un identificador de 41 caracteres tras la palabra "**commit**", este código representa a este commit en concreto y podremos utilizarlo más adeltante para interactuar con el.
 
 También veremos el **autor** del commit, la **fecha** en que se hizo y la **nota** adjunta, esta nota es ese texto que tenemos que poner siempre que ejecutamos un **commit**.
 
@@ -26,12 +25,12 @@ También veremos el **autor** del commit, la **fecha** en que se hizo y la **not
 
 
 ## HEAD
-Podemos ver al final del registro más reciente la palabra **HEAD** esto se refiere al registro en el que estamos en ese momento, cualquier cambio que hagamos será posterior al lugar donde se encuentre HEAD que puede cambiar si nos interesa. Esto se verá en más profundidad en la sección que habla del comando `git checkout`.
+Podemos ver al final del registro más reciente la palabra **HEAD** esto se refiere al registro en el que estamos en ese momento, cualquier cambio que hagamos será posterior al lugar donde se encuentre HEAD que puede cambiar si nos interesa. Esto se verá en más detalle en la sección que habla del comando `checkout`. **HEAD** es como el cursor que nos marca donde van a aparecer las letras cuando escribimos en un editor de texto.
 
 ## main
-Al final del registro podemos encontrar que **HEAD** apunta con una flecha a **main**, este "main" es un nombre por defecto que se le aplica a la rama principal cuando creamos un proyecto nuevo, podemos llamar a esta rama de cualquier otra forma pero dodne aparezca su nombre será el extremo más reciente de esa rama, lo mismo se aplica para cualquier otra rama, donde veamos su nombre esa es la punta de la rama.
+Al final del registro podemos encontrar que **HEAD** apunta con una flecha a **main**, este "main" es un nombre por defecto que se le aplica a la rama principal cuando creamos un proyecto nuevo, podemos llamar a esta rama de cualquier otra forma pero donde aparezca su nombre será el extremo más reciente de esa rama, lo mismo se aplica para cualquier otra rama, donde veamos su nombre esa es la punta de la rama.
 
-Teniendo en cuenta estos dos conceptos nos encontramos (osea HEAD) en la punta de la rama principal "main" y cualquier nuevo commmit se colocará por delante de este punto y por lo tanto HEAD y main se desplazarán a el.
+Si observamos el ejemplo anterior y tenemos en cuenta estos dos conceptos nos encontramos (osea HEAD se encuentra) en la punta de la rama principal "main" y cualquier nuevo commmit se colocará por delante de este punto (de HEAD) y por lo tanto HEAD y main se desplazarán a el. 
 
 ---
 
@@ -67,7 +66,7 @@ Si volvemos a ejecutar `git log` ahora aparece este nuevo registro que acabamos 
 &nbsp;    
 
 ## **Formas de utilizar "git log"**
-Esta no es la única forma de ver al salida del comando `git log`, mediante algunos atrubutos podemos modificar el comando para que nos devuelva una salida más atractiva. En los siguientes ejemplos mostraré algunas formas de formatear el comando `git log`, existen más formas que podemos encontrar en la documentación de git --> https://www.git-scm.com/docs/git-log
+Esta no es la única forma de ver al salida del comando `git log`, mediante algunos atributos podemos modificar el comando para que nos devuelva una salida más atractiva. En los siguientes ejemplos mostraré algunas formas de formatear el comando `git log`, existen más formas que podemos encontrar en la documentación de git --> https://www.git-scm.com/docs/git-log
 
 &nbsp;    
 
@@ -166,5 +165,5 @@ A no ser que estemos en el mismo directorio que el arhibo buscado tendremos que 
 ## POR CONTENIDO
 ## git log -S"Contenido"
 
-Con este comando podemos encontrar el commit concreto en que se agrego cierto contenido a un archivo, por ejemplo si queremos buscar en que commit se añadió a un archivo el string "Hola gente!" el comando sería `git log -S"Hola gente!"`
+Con este comando podemos encontrar el commit concreto en que se agrego cierto contenido a un archivo, por ejemplo si queremos buscar en que commit se añadió a un archivo el string "Hola gente!" el comando sería `git log -S"Hola gente!"`.
 Esto se llama **pickaxe** y tiene la forma **-S""**, la cadena buscada va entre las comillas.

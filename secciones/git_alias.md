@@ -34,10 +34,11 @@ Justo después del punto ponemos el nombre para el alias, en nuestro caso "**reg
 ## NOTA:
 Al crear el alias no añadiremos la palabra **git** al principio porque la vamos a utilizar para llamar al propio alias.
 
-Y ya estaría, con esto habremos creado el alias “reg” que ejecutará “log --graph --decorate --all --oneline” cada vez que sea ejecutado.     
+Y ya estaría, con esto habremos creado el alias “**reg**” que ejecutará `log --graph --decorate --all --oneline` cada vez que sea ejecutado con 'git'.     
 ![git_alias](/IMG/git_alias_01.png "git alias")      
 
 
 Para borrar un alias creado utilziaremos el atributo `--unset` del comando config:
-Así:    
+
+Por ejemplo, si quisieramos borrar nuestro alias "**reg**":    
 ## git config --global --unset alias.reg

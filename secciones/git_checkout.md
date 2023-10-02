@@ -23,3 +23,12 @@ Veremos que según la nota del penúltimo commit ahí es donde se creo el archiv
 Si en un momento dado consideramos que fue un error haber creado ese archivo podemos volver atrás en el tiepo al momento en que ese archivo aún no había sido creado, para ello utilizaremos el comando `git checkout` para desplazarnos (desplazar el HEAD) al commit anterior a la creación de ese archivo que tiene el identificador `5febbab`.
 
 Así:
+
+
+![git_checkout](/IMG/git_checkout_03.png "Archivo")      
+
+![git_checkout](/IMG/git_checkout_04.png "Archivo")      
+
+![git_checkout](/IMG/git_checkout_05.png "Archivo")      
+
+![git_checkout](/IMG/git_checkout_06.png "Archivo")      

@@ -21,13 +21,27 @@ Esto nos mostrará un identificador tras la palabra "**commit**", este código r
 
 También veremos el **autor** del commit, la **fecha** en que se hizo y la **nota** adjunta, esta nota es ese texto que tenemos que poner siempre que ejecutamos un **commit**.
 
+---
+## **NOTAS:**
+
+
+## HEAD
+Podemos ver al final del registro más reciente la palabra **HEAD** esto se refiere al registro en el que estamos en ese momento, cualquier cambio que hagamos será posterior al lugar donde se encuentre HEAD que puede cambiar si nos interesa. Esto se verá en más profundidad en la sección que habla del comando `git checkout`.
+
+## main
+Al final del registro podemos encontrar que **HEAD** apunta con una flecha a **main**, este "main" es un nombre por defecto que se le aplica a la rama principal cuando creamos un proyecto nuevo, podemos llamar a esta rama de cualquier otra forma pero dodne aparezca su nombre será el extremo más reciente de esa rama, lo mismo se aplica para cualquier otra rama, donde veamos su nombre esa es la punta de la rama.
+
+Teniendo en cuenta estos dos conceptos nos encontramos (osea HEAD) en la punta de la rama principal "main" y cualquier nuevo commmit se colocará por delante de este punto y por lo tanto HEAD y main se desplazarán a el.
+
+---
+
 &nbsp;    
 
-Ahora creamos otro archivo en el mismo directorio que el anterior y le ponemos el nombre “hellogit_2.py”
+Ahora creamos otro archivo en el mismo directorio que el anterior y le ponemos el nombre “hellogit_2.py”:
 
 ![git_log](/IMG/git_log_02.png "git log")
 
-Si ahora ejecutamos otra vez el comando `git status` se nos informará de que nuestro nuevo archivo no está en seguimiento.
+Si ahora ejecutamos otra vez el comando `git status` se nos informará de que nuestro nuevo archivo no está en seguimiento:
 
 ![git_log](/IMG/git_log_03.png "git log")
 
@@ -45,7 +59,7 @@ zet@wukong:~/Escritorio/Hello_Git$
 
 &nbsp;    
 
-Si volvemos a ejecutar `git log` ahora aparece este nuevo registro que acabamos de crear con su identificador único.
+Si volvemos a ejecutar `git log` ahora aparece este nuevo registro que acabamos de crear con su identificador único:
 
 ![git_log](/IMG/git_log_04.png "git log")
 
@@ -53,7 +67,7 @@ Si volvemos a ejecutar `git log` ahora aparece este nuevo registro que acabamos 
 &nbsp;    
 
 ## **Formas de utilizar "git log"**
-Esta no es la única forma de ver al salida del comando `git log`, mediante algunos atrubutos podemos modificar el comando para que nos devuelva una salida más atractiva. En los siguientes ejemplos mostraré algunas formas de formatear el comando `git log`, existen más formas.    
+Esta no es la única forma de ver al salida del comando `git log`, mediante algunos atrubutos podemos modificar el comando para que nos devuelva una salida más atractiva. En los siguientes ejemplos mostraré algunas formas de formatear el comando `git log`, existen más formas que podemos encontrar en la documentación de git --> https://www.git-scm.com/docs/git-log
 
 &nbsp;    
 
@@ -150,7 +164,7 @@ Por ejemplo aquí buscamos todos los commits que afectaron al archivo **git_add.
 A no ser que estemos en el mismo directorio que el arhibo buscado tendremos que indicar su ruta.
 
 ## POR CONTENIDO
-git log -S"Contenido"
+## git log -S"Contenido"
 
 Con este comando podemos encontrar el commit concreto en que se agrego cierto contenido a un archivo, por ejemplo si queremos buscar en que commit se añadió a un archivo el string "Hola gente!" el comando sería `git log -S"Hola gente!"`
 Esto se llama **pickaxe** y tiene la forma **-S""**, la cadena buscada va entre las comillas.

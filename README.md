@@ -31,9 +31,13 @@ Guia para a aprender a menajar el sistema de control de versi√≥n Git y su versi√
 
 &nbsp;    
 
-* [git  log](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_log.md)
+* [git log](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_log.md)
 
-* [git  checkout](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_checkout.md)
+* [git checkout](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_checkout.md)
+
+* [git alias](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_alias.md)
+
+
 
 &nbsp;    
 &nbsp;    

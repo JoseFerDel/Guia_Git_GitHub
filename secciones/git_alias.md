@@ -27,7 +27,7 @@ Justo después del punto ponemos el nombre para el alias, en nuestro caso "**reg
 
 ## git config --global alias.reg
 
-... y aquí ponemos un espacio y justo después esribimos entre comillas simples el comando al que se llamará al ejecutar el alias:
+... y aquí ponemos un espacio y justo después esribimos entre **comillas simples** el comando al que se llamará al ejecutar el alias:
 
 ## git config --global alias.reg 'log --all --graph --decorate --oneline'
 

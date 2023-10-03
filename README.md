@@ -37,7 +37,7 @@ Guia para a aprender a menajar el sistema de control de versi√≥n Git y su versi√
 
 * [git alias](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_alias.md)
 
-* [.gitignore]
+* [.gitignore](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/gitignore.md)
 
 
 &nbsp;    

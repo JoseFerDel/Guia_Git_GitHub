@@ -15,13 +15,13 @@ Por ejemplo, supongamos que tenemos un archivo en el directorio de nuestro proye
 
 Para que funcione crearemos el archivo .gitignore dentro del directorio de nuestro proyecto y dentro escribiremos `**/` seguido del nomrbe del arhivo que queremos ignorar (sin la ruta). Hay varias sintaxis para introducir instrucciones dentro de este archivo, esta en concreto nos servirá para ignorar archivos:     
 ![gitignore](/IMG/gitignore_02.png ".gitignore")      
-El archivo .gitignore contiene una sola línea en la que pone ****/lista_compra.txt**
+El archivo **.gitignore** contiene una sola línea en la que pone ****/lista_compra.txt**
 
 &nbsp;    
 
 Si tras colocar el nombre del archivo a ignorar dentro de .gitignore ejecutamos `git status` veremos lo siguiente:     
 ![gitignore](/IMG/gitignore_03.png ".gitignore")      
-El archivo **lista_compra.txt** ya no aparece, ni aparecerá cualquier otro archivo con ese nombre que por lo que sea se cree dentro del directorio de trabajo.
+El archivo **lista_compra.txt** ya no aparece, ni aparecerá cualquier otro archivo con ese nombre que por lo que sea se cree dentro del directorio de trabajo. El archivo **lista_compra.txt** ya no está en seguimiento y a **git** no le importa si lo modificamos o lo eliminamos.
 
 &nbsp;    
 

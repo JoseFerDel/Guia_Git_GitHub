@@ -39,6 +39,10 @@ Guia para a aprender a menajar el sistema de control de versi√≥n Git y su versi√
 
 * [.gitignore](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/gitignore.md)
 
+* [git reset](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_reset.md)
+
+* [git reflog](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_reflog.md)
+
 
 &nbsp;    
 &nbsp;    

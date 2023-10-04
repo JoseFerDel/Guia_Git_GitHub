@@ -24,19 +24,19 @@ La secuencia básica para que registrar cambios en una archivo sería esta:
 
 
 * ### Soft Reset 
-**git reset --soft CÓDIGO_DEL_COMMIT):**      
+**git reset --soft CÓDIGO_DEL_COMMIT:**      
 		Mueve la rama actual (master, main, o lo que sea) y el "HEAD" al commit especificado, pero mantiene los cambios de los commits posteriores en el área de preparación.
 		Si están en el area de preparación no tendremos que ejecutar `git add` otra vez con esos archivos para que vuelvan a estar en seguimiento, solo se habrán desehcho los commits posteriores.
 
 
 * ### Mixed Reset 
-**git reset --mixed CÓDIGO DEL COMMIT):**     
+**git reset --mixed CÓDIGO_DEL_COMMIT:**     
 		Mueve la rama actual (master, main, o lo que sea) y el "HEAD" al commit especificado, restablece el área de preparación, pero conserva los cambios en el árbol de trabajo (osea los archivos se quedan igual).
 		En este caso los commits posteriores estan en el area de preparación, por lo que no es necesario volver a ejecutar “git add” pero se han perdido sus commits posteriores al punto donde nos hemos movido, esos archivos siguen ahí pero tendremos que volver a ejecutar `git commit`para que los cambios vuelvan a estar registrados.
 		Esta es la opción por defecto de git reset así que no es necesario poner --mixed al final.
 
 * ### Hard Reset 
-**git reset --hard CÓDIGO DEL COMMIT):**      
+**git reset --hard CÓDIGO_DEL_COMMIT:**      
 		Mueve la rama actual (master, main, o lo que sea) y el "HEAD" al commit especificado, restablece el área de preparación y el árbol de trabajo, eliminando todos los cambios de los commits posteriores.
 		Aquí también nos movemos al registro especificado pero se elimina todo lo creado posteriormente, cualquier archivo o cambio posterior desaparecerá y no podremos recuperarlos de forma normal (existe alguna forma pero ya es una operación de rescate, git borrará definitivamente estos archivos de su “papelera” pasado un tiempo o si necesita espacio. Lo que hace `git reset --hard` es retroceder en el tiempo completamente.
 
@@ -58,4 +58,21 @@ Así:
 ![git_reset](/IMG/git_reset_03.png "git reset")      
 
 Si tras el reset volvemos a ejecutar el comando `git log --oneline` veremos que han desaparecido los registros posteriores al punto desde donde hemos hecho el reset:     
-![git_reset](/IMG/git_reset_03.png "git reset")      
+![git_reset](/IMG/git_reset_04.png "git reset")      
+
+&nbsp;    
+&nbsp;    
+
+Aunque he mencionado que los registros posteriores desaparecen esto solo es en apariencia.    
+Si ejecutamos un `git log` con el atributo `--all` veremos todos lo registros en todas las ramas, incluidos los que se han eliminado, que en realidad están guardados temporalmente.     
+![git_reset](/IMG/git_reset_05.png "git reset")      
+
+Repitiendo un `git reset --hard` sobre uno de los registros desaparecidos restauraríamos la rama hasta ese punto, `git reset hard` sirve tanto para **eliminar registros** como para **restaurarlos**.
+
+Restauremos la rama para volver tener todos los registros que teníamos al principio, para ello ejecutaremos `git reset --hard` sobre el ID del commit que corresponda, en este caso el `eb21565`, el que erá el más reciente antes de hacer el reset.     
+![git_reset](/IMG/git_reset_06.png "git reset")      
+
+
+Otro `git log' nos mostrará que volvemos a tener todos los commits como al principio.    
+![git_reset](/IMG/git_reset_07.png "git reset")      
+Los registros que habían desaparecido han vuelto, igual que cualquier archivo que también hubiese desaparecido.

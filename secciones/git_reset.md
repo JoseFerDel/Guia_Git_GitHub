@@ -73,6 +73,15 @@ Restauremos la rama para volver tener todos los registros que teníamos al princ
 ![git_reset](/IMG/git_reset_06.png "git reset")      
 
 
-Otro `git log' nos mostrará que volvemos a tener todos los commits como al principio.    
+Otro `git log` nos mostrará que volvemos a tener todos los commits como al principio.    
 ![git_reset](/IMG/git_reset_07.png "git reset")      
 Los registros que habían desaparecido han vuelto, igual que cualquier archivo que también hubiese desaparecido.
+
+
+> ## NOTA: 
+> Si hemos estado utilizando `git reset --hard` es posible que **HEAD** haya quedado en un estado conocido como “**Desacoplado**”, esto lo podemos ver ejecutando “git status”, significa que **HEAD** ya no se mueve junto con **main**, si ocurre esto veremos que **HEAD** avanza con los nuevos commits mientras que el nombre de la rama, en este caso “main” sigue en el mismo sitio aunque sigamos haciendo más commits, porque sigue siendo ese el verdadero final de la rama main.     
+> ![git_tag](/IMG/git_reset_08.png "git log")      
+
+> **Dos posibles soluciones:**    
+>> 1. Ignoramos los nuevos commits desacoplados y ejecutamos `git checkout main` para volver al verdadero final de la rama donde podremos crear nuevos commits.
+>> 2. Si los **commits** desacoplados son importatens podemos crear una nueva rama con ellos ejecutando `git branch tmp` mientras estamos en la rama desacoplada sin nombre, "tmp" es un nombre cualquiera que le damos a la rama, después ejecutar "git checkout main" para volver a la rama principal y desde aquí ejecutamos `git merge tmp` para combinar el contenido de la rama **tmp** con nuestra rama principal **main**.

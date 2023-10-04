@@ -43,6 +43,7 @@ Guia para a aprender a menajar el sistema de control de versi√≥n Git y su versi√
 
 * [git reflog](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_reflog.md)
 
+* [git tag](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_tag.md)
 
 &nbsp;    
 &nbsp;    

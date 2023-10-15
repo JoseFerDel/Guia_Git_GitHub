@@ -7,5 +7,6 @@ El comando `switch` cumple una de las varias funciones de las que se ocupa el co
 
 El comando ' switch' al igual otros comandos de git cumple la función de separar en comandos diferentes las multiples funciones del comando `checkout` para hacer el uso del **Git** más claro.
 
+&nbsp;    
 
 Otro ejemplo de un comando creado para cumplir una función de `checkout` es `git restore` que se puede utilizar para restablecer archivos a ciertas revisiones, como lo hace `git checkout -- <ruta_al_archivo>`

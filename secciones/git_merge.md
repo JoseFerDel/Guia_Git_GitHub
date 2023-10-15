@@ -48,6 +48,7 @@ Ahora cambiamos el nombre de la rama principal (**master**) por otro nombre, por
 zet@wukong:~/Escritorio/merge_test$ git branch -m mtest
 zet@wukong:~/Escritorio/merge_test$ 
 ``` 
+&nbsp;    
 
 Podemos ver el resultado si ejecutamos el comando `git status`:
 
@@ -97,11 +98,15 @@ Mientras solo tengamos una rama bastará con utilizar git tree para ver los regi
 
 Aquí podemos ver 3 commits referentes a la creación de 3 archivos, vemos que el **HEAD** se encuentra en el último commit y que este además es el final de la rama **mtest**.
 
+&nbsp;    
+
 Con esto ya tenemos los preparativos, ahora vamos a crear una rama nueva llamada **mrama**.
 
 Como de momento no hay commits en la nueva rama no hay diferencia ente utilizar nuestro alias `tree` o el `treeall`, en ambos podemos ver que ahora el registro `337468e` es el final de ambas ramas.
 
 ![git_merge](/IMG/git_merge_03.png "git merge")      
+
+&nbsp;    
 
 Creamos la nueva rama, llamada **mrama**, con el comando `git branch mrama`.
 
@@ -113,6 +118,8 @@ M       file_2
 Cambiado a rama 'mrama'
 zet@wukong:~/Escritorio/merge_test$ 
 ``` 
+
+&nbsp;    
 
 Primero modificaremos el contenido de **file_2**:
 
@@ -131,6 +138,7 @@ zet@wukong:~/Escritorio/merge_test$
 zet@wukong:~/Escritorio/merge_test$ 
 ``` 
 
+&nbsp;    
 
 Después añadiremos contenido, sin modificar el existente, en **file_3**:
 
@@ -149,6 +157,8 @@ Añado contenido a file_3
 zet@wukong:~/Escritorio/merge_test$ 
 ``` 
 
+&nbsp;    
+
 Además vamos a borrar **file_1**:
 
 ``` 
@@ -156,9 +166,13 @@ zet@wukong:~/Escritorio/merge_test$ rm file_1
 zet@wukong:~/Escritorio/merge_test$ 
 ``` 
 
+&nbsp;    
+
 Si ejecutamos `git status` se nos informa de que tenemos cambios por agregar a la zona stage:
 
 ![git_merge](/IMG/git_merge_04.png "git merge")      
+
+&nbsp;    
 
 Ejecutamos `git add .` para agregar todas las modificaciones a STAGE y después ejecutamos un commit para registrar estos cambios:
 
@@ -166,21 +180,32 @@ Ejecutamos `git add .` para agregar todas las modificaciones a STAGE y después 
 
 Con esto el terreno de pruebas queda preparado.
 
+&nbsp;    
+
 Ahora cambiamos a la rama principal **mtest** y desde aquí ejecutamos los alias tree y treeall, vemos que que solo vemos la nueva rama al ejecutar el segundo.
 
 ![git_merge](/IMG/git_merge_06.png "git merge")      
+
+&nbsp;    
 
 Podemos ver que en la rama principal **mtest** no se refleja ninguno de los cambios realizados en la nueva rama **mrama**:
 
 ![git_merge](/IMG/git_merge_07.png "git merge")      
 
+&nbsp;    
+
 Para ampliar más la zona de pruebas voy a crear otro commit en la rama principal que será posterior en el tiempo a los commits que acabamos de hacer en la rama secundaria:
 
 ![git_merge](/IMG/git_merge_08.png "git merge")      
 
+&nbsp;    
+
 Además, para que el proyecto tenga más contenido voy a crear otro commit en la rama secundaria:
 
 ![git_merge](/IMG/git_merge_09.png "git merge")      
+
+&nbsp;    
+&nbsp;    
 
 ## Comando merge
 
@@ -194,10 +219,11 @@ Desde la rama secundaria “mrama” vamos a importar los datos que tenga la ram
 
 ![git_merge](/IMG/git_merge_10.png "git merge")      
 
+&nbsp;    
+
 En este ejemplo se ha ignorado pero el sistema te va a pedir que hagas un commit al mismo tiempo que ejecutas un merge, con el comando `git merge -m “Comantario commit"` podemos hacerlo.
 
-Ahora el **log** nos muestra que las dos ramas se unen en un  commit automatico que se ha creado, porque no hemos puesto nungún texto por nuestra cuenta, **mrama** contiene ahora todos los datos de ambas ramas combinados.
-
+Ahora el **log** nos muestra que las dos ramas se unen en un  commit automatico que se ha creado, porque no hemos puesto nungún texto por nuestra cuenta, **mrama** contiene ahora todos los datos de ambas ramas combinados.:
 
 ![git_merge](/IMG/git_merge_11.png "git merge")      
 

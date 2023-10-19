@@ -2,7 +2,7 @@
 
 # **git stash**
 
-Si, mientras estamos editando un archivo en una rama, antes de terminar la edición y hacer un commit, intentamos cambiar de rama se nos advertirá de que todavía tenemos algo sin confirmar, sin hacer commit en el, y no se nos permitirá cambiar de rama.
+Si, mientras estamos editando un archivo en una rama, antes de terminar la edición y hacer un commit, intentamos cambiar de rama se nos advertirá de que todavía tenemos algo sin confirmar, sin commit, y a causa de esto no se nos permitirá cambiar de rama.
 
 ![git_stash](/IMG/git_stash_01.png "git stash")      
 
@@ -31,7 +31,7 @@ Con este comando podemos ver que **stash** hay guardados.
 
 ![git_stash](/IMG/git_stash_04.png "git stash")      
 
-Se nos indica la rama donde se ha hecho el stash y el último commit que había en el momento de hacer la edición.
+Se nos indica la rama donde se ha hecho el stash y el último commit que había en ese momento.
 
 &nbsp;    
 

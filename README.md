@@ -51,6 +51,8 @@ Guia para a aprender a menajar el sistema de control de versi√≥n Git y su versi√
 
 * [git merge](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_merge.md)
 
+* [git stash](https://github.com/JoseFerDel/Guia_Git_GitHub/blob/Zet_main/secciones/git_stash.md)
+
 &nbsp;    
 &nbsp;    
 &nbsp;    
